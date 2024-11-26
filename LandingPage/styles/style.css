@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ body{
+    overflow-x: hidden;
+}
+
+.no-copy {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+h1{
+    font-family: 'Quicksand';
+}
+
+/* Configurações para a seção 1 */
+.link-bar {
+    background-color: #010E26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+}
+
+#logo-container {
+    position: absolute;
+    left: 250px;
+    width: 230px;
+}
+
+#logo-container img {
+    width: 76px;
+    height: 73px;
+}
+
+#text-logo-right {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+#container-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 33%;
+}
+
+#container-links li {
+    display: inline-block;
+    position: relative;
+}
+
+#container-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* acertar dropdown */
+
+#dropdown-acess{
+    background-color: #010E26;
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 217px;
+    height: 263;
+    border-radius: 5px;
+    right: 70px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.list-acess-style {
+    padding: 20px;
+}
+
+.list-dropdown-acess {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-dropdown-acess li {
+    text-align: center;
+}
+
+.item-2-3-acess {
+    margin-top: 25px;
+}
+
+.line-white {
+    margin-top: 20px;
+    align-self: center;
+    width: 170px;
+}
+
+#dropdown-acess.show {
+    display: flex;
+}
+
+/*configuração do body*/
+
+#image-background #fundo-opaco{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #162658;  
+    opacity: 0.55; 
+    z-index: 1;
+}
+
+#image-background {
+    position: relative;
+    max-width: 100%;
+    height: 100vh; 
+}
+
+#image-background img{
+    position: absolute; 
+    z-index: 0; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    background-position: center top;
+}
+
+.section-1{
+    position: absolute;
+    z-index: 2; 
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.section-1 #section-1-phrase{
+    font-family: 'Quicksand';
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.section-1 h1{
+    text-align: center;
+    color: white;
+    font-size: 53px;
+    margin-top: 40px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section-1 p{
+    margin-top: 40px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+} 
+
+.contariner-buttons-section-1{
+    width: 597px;
+    height: 81px;
+    z-index: 90;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+}
+
+.contariner-buttons-section-1 #inscricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #657AEF;
+    width: 287px;
+    height: 81px;
+    border-radius: 15px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#inscricao::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url('../images/keyboard_arrow_right.png');
+    background-size: cover;
+}
+
+#editais::after {
+    content: "";
+    margin-left: 10px;
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/seta-direita.png');
+    background-size: cover;
+}
+
+.contariner-buttons-section-1 #editais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    width: 287px;
+    height: 81px;
+    border-radius: 15px;
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.white-part{
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background-color: white;
+    z-index: 10;
+    height: 80px;
+    
+}
+
+/*PROJETOS*/
+
+#projects{
+    position: relative;
+    height: 100%;
+}
+
+.projects-header{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects h1{
+    color: #30437C;
+    z-index: 3;
+    font-size: 53px;
+    text-align: center;
+    display: inline-block;
+    border-right: solid 3px #4DD6F6;
+    padding-right: 10px;
+}
+
+#projects p{
+    display: inline-block;
+    text-align: left;
+    font-family: 'Nunito Sans';
+    color: #212E56;
+    margin-left: 10px;
+    font-size: 23px;
+    position: relative;
+    top: 25px;
+}
+
+.element-left{
+    position: relative;
+    top: 300px;
+    width: 500px;
+    display: inline-block;
+}
+
+.element-right{
+    position: absolute;
+    top: 600px;
+    right: 0px;
+    width: 500px;
+    float: right;
+}
+
+.projects-links-central{
+    position: absolute; 
+    top: 80%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    width: 650px;
+    height: 900px;
+    background-color: white;
+}
+
+.preservate{
+    width: 290px;
+    height: 405px;
+    background-image: url(../images/preservarte-foto-300x170.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.projects-links{
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+.title-preservate{
+    width: 221px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mcDia-Central{
+    width: 100%;
+    height: 100%;
+}
+
+.macDia{
+    width: 290px;
+    height: 405px;
+    background-image: url(../images/MCDIA-FELIZ-2-768x1024.png);
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.tittle-macDia{
+    width: 221px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.acacci{
+    width: 290px;
+    height: 405px;
+    background-image: url(../images/Acacci-4-e1626526594397-300x285.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+}
+
+.title-acacci{
+    width: 221px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.idolo-central{
+    width: 100%;
+    height: 100%;
+}
+
+.idolo{
+    width: 290px;
+    height: 405px;
+    background-image: url(../images/WhatsApp-Image-2021-03-01-at-10.53.15-2-300x300.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.tittle-idolo{
+    width: 221px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ver-mais{
+    height: 81px;
+    width: 287px;
+    background-color: #6B79C6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -55%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ver-mais h2{
+    font-size: 32px;
+    color: white;
+}
+
+.ver-mais h2::after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/keyboard_arrow_right.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    vertical-align: middle; 
+}
