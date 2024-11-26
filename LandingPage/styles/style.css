@@ -309,6 +309,7 @@ h1{
     width: 650px;
     height: 900px;
     background-color: white;
+    z-index: 10;
 }
 
 .preservate{
